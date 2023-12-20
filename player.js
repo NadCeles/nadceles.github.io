@@ -44,7 +44,7 @@ let wallJumpDirection /*The direction for the wall jump*/
 
  /*Dash values*/
 let dashFrames = 0; /*Counts time since dash started*/
-const dash_speed = 6; /*Dash distance*/
+const dash_speed = 9; /*Dash distance*/
 const dash_max_frames = 10/*Dash time*/
 
 /*Player status*/
@@ -109,7 +109,7 @@ function updateMove(){
     if(left && !isWallJumping){
         xPosition -= movementSpeed
         if(isDashing && !up){
-            xPosition -= dash_speed * 1.5;
+            xPosition -= dash_speed;
         }
         else if(isDashing && up){
             xPosition -= dash_speed * 0.707;
@@ -120,7 +120,7 @@ function updateMove(){
     if(right && !isWallJumping){
         xPosition += movementSpeed;
         if(isDashing && !up){
-            xPosition += dash_speed * 1.5;
+            xPosition += dash_speed;
         }
         else if(isDashing && up){
             xPosition += dash_speed * 0.707;
@@ -131,10 +131,10 @@ function updateMove(){
     /*Movement up for dashing*/
     if(up && isDashing){
         if(left || right){
-            yPosition -= dash_speed;
+            yPosition -= dash_speed * 0.707;
         }
         else{
-            yPosition -= dash_speed * 1.5;
+            yPosition -= dash_speed;
         }
         
     }
