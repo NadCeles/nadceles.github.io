@@ -35,7 +35,7 @@ function checkMovement(){
             bgImage.style.backgroundColor = "#10033d"
             let picho = document.getElementById('picho');
             let endText = document.getElementById('endText');
-            var endingTimer = setInterval(endScene, 40)
+            var endingTimer = setInterval(endScene, 50)
             let endAnimation = setInterval(endingBG, 700)
         }
         board.innerHTML = levelArr[levelIndex];
