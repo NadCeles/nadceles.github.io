@@ -116,7 +116,7 @@ window.onclick = function(event){
     }
 }
 
-window.addEventListener('keydown', function(e) {
+/*window.addEventListener('keydown', function(e) {
     if(e.key === "1"){
         board.innerHTML = level1;
         levelIndex = 1;
@@ -163,4 +163,4 @@ window.addEventListener('keydown', function(e) {
         let picho = document.getElementById('picho');
         var endingTimer = setInterval(endScene, 40)
     }
-    })
+    })*/
