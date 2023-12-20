@@ -66,6 +66,17 @@ header{
     height: 30px;
 }
 
+#controls{
+    position: relative;
+    margin: auto;
+    width: 600px;;
+}
+
+#subtitle{
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
 .platforms{
     position: absolute;
     background-image: url('sprites/iceTile1.png');
