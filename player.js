@@ -44,8 +44,8 @@ let wallJumpDirection /*The direction for the wall jump*/
 
  /*Dash values*/
 let dashFrames = 0; /*Counts time since dash started*/
-const dash_speed = 9; /*Dash distance*/
-const dash_max_frames = 10/*Dash time*/
+const dashSpeed = 9; /*Dash distance*/
+const dashMaxFrames = 10/*Dash time*/
 
 /*Player status*/
 let isJumping = false; /*Checks if player is jumping*/
@@ -109,53 +109,50 @@ function updateMove(){
     if(left && !isWallJumping){
         xPosition -= movementSpeed
         if(isDashing && !up){
-            xPosition -= dash_speed;
+            xPosition -= dashSpeed;
         }
         else if(isDashing && up){
-            xPosition -= dash_speed * 0.707;
+            xPosition -= dashSpeed * 0.707;
         }
     }
-
     /*Movement to the Right*/
     if(right && !isWallJumping){
         xPosition += movementSpeed;
         if(isDashing && !up){
-            xPosition += dash_speed;
+            xPosition += dashSpeed;
         }
         else if(isDashing && up){
-            xPosition += dash_speed * 0.707;
+            xPosition += dashSpeed * 0.707;
         }
         
     }
-
     /*Movement up for dashing*/
     if(up && isDashing){
         if(left || right){
-            yPosition -= dash_speed * 0.707;
+            yPosition -= dashSpeed * 0.707;
         }
         else{
-            yPosition -= dash_speed;
+            yPosition -= dashSpeed;
         }
         
     }
-
     /*Movement down for dashing*/
     if(down && isDashing){
         if(left || right){
-            yPosition += dash_speed * 0.707;
+            yPosition += dashSpeed * 0.707;
         }
         else{
-            yPosition += dash_speed;
+            yPosition += dashSpeed;
         }
     }
 
     /*Stand still dash*/
     if(!right && !left && !up && !down && isDashing){
         if(lastFacing === "right"){
-            xPosition += dash_speed;
+            xPosition += dashSpeed;
         }
         else if(lastFacing === "left"){
-            xPosition -= dash_speed;
+            xPosition -= dashSpeed;
         }
     }
 
@@ -248,7 +245,7 @@ function updateWallJump(){
 /*Dash*/
 function updateDash(){
     dashFrames += 1;
-    if(dashFrames >= dash_max_frames){
+    if(dashFrames >= dashMaxFrames){
         isDashing = false;
         dashFrames = 0;
     }

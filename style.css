@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    background-color: #4f469a;
 }
 
 header{
@@ -36,6 +37,7 @@ header{
 #credits{
     margin-top: 300px;
     font-size: 0.9rem;
+    color: lightblue;
 }
 #board{
     margin: auto;
@@ -44,6 +46,15 @@ header{
     position: relative;
     background-image: url("sprites/background2.png");
 }
+
+a:link{
+    color: aquamarine;
+}
+
+a:visited{
+    color: aqua;
+}
+
 
 #character{
     width: 30px;
@@ -87,7 +98,9 @@ header{
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;;
+    width: 430px;
+    height: 300px;
+    background-image: url('sprites/control_menu.png');
 }
 
 #subtitle{
