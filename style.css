@@ -6,6 +6,14 @@ header{
     background-image: url("sprites/scoreBg.png")
 }
 
+#browser{
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    width: 500px;
+    left: 230px;
+}
+
 #endText{
     font-family: 'Dancing Script', cursive;
     z-index: 1;
