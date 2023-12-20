@@ -8,7 +8,8 @@ bgMusic.play()
 
 
 const level0 = `<div id="titleImg"></div>
-<button type="button" id="newGame"></button>`
+<button type="button" id="newGame"></button>
+<div id="gameCredits">A Game by Nadia Cerra & Jaime Llaca<div>`
 
 const level1 = `<div class="platforms" id="p_1_1"></div>
 <div class="platforms" id="p_1_2"></div>

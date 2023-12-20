@@ -20,6 +20,19 @@ header{
     display: none;
 }
 
+#gameCredits{
+    font-family: 'Kalnia', serif;
+    position:absolute;
+    width: 350PX;
+    top:575px;
+    left: 270px;
+    color: lightblue
+}
+
+#credits{
+    margin-top: 300px;
+    font-size: 0.9rem;
+}
 #board{
     margin: auto;
     width: 600px;
