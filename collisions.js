@@ -34,6 +34,7 @@ function checkMovement(){
             respawn()
             bgImage.style.backgroundColor = "#10033d"
             let picho = document.getElementById('picho');
+            let endText = document.getElementById('endText');
             var endingTimer = setInterval(endScene, 40)
             let endAnimation = setInterval(endingBG, 700)
         }

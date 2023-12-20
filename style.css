@@ -7,16 +7,15 @@ header{
 }
 
 #endText{
+    font-family: 'Dancing Script', cursive;
     z-index: 1;
     position: absolute;
     width: 500px;
     height: 30px;
     top: 150px;
-    left: 170px;
-    color: blue;
-    font-size: 4rem;
-    font-weight: 500;
-    font-family:fantasy;
+    left: 150px;
+    color: lightblue;
+    font-size: 5rem;
     text-shadow: 0 0 1px lightblue;
     display: none;
 }

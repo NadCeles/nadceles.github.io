@@ -26,6 +26,7 @@ function endScene(){
     if(xPlayer >= 270){
         isWalking = false;
         animations();
+        endText.style.display = "block";
     }
     
 }
